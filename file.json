@@ -1,0 +1,101 @@
+{
+    "State.c3b18b07-73ea-4fc2-9527-bd7f287d89d2": {
+        "id": "c3b18b07-73ea-4fc2-9527-bd7f287d89d2",
+        "created_at": "2024-01-16T01:25:08.778527",
+        "updated_at": "2024-01-16T01:25:08.778531",
+        "name": "California",
+        "__class__": "State"
+    },
+    "State.04cf0ef8-0d00-4e79-8801-3e8600907e71": {
+        "id": "04cf0ef8-0d00-4e79-8801-3e8600907e71",
+        "created_at": "2024-01-16T01:25:08.778853",
+        "updated_at": "2024-01-16T01:25:08.778855",
+        "name": "Nevada",
+        "__class__": "State"
+    },
+    "State.49cba970-66e2-44e2-b2ff-3bd653006ab4": {
+        "id": "49cba970-66e2-44e2-b2ff-3bd653006ab4",
+        "created_at": "2024-01-16T01:25:21.380619",
+        "updated_at": "2024-01-16T01:25:21.380640",
+        "name": "California",
+        "__class__": "State"
+    },
+    "State.09e36362-6da1-46db-b5bb-472c40ef1cba": {
+        "id": "09e36362-6da1-46db-b5bb-472c40ef1cba",
+        "created_at": "2024-01-16T01:25:21.381098",
+        "updated_at": "2024-01-16T01:25:21.381100",
+        "name": "Nevada",
+        "__class__": "State"
+    },
+    "State.c353d079-b276-46a7-82e3-689d445b98b5": {
+        "id": "c353d079-b276-46a7-82e3-689d445b98b5",
+        "created_at": "2024-01-16T04:04:56.176831",
+        "updated_at": "2024-01-16T04:04:56.176837",
+        "name": "California",
+        "__class__": "State"
+    },
+    "State.bc3cc27d-af7f-4610-8094-3821231b2972": {
+        "id": "bc3cc27d-af7f-4610-8094-3821231b2972",
+        "created_at": "2024-01-16T04:04:56.177419",
+        "updated_at": "2024-01-16T04:04:56.177425",
+        "name": "Nevada",
+        "__class__": "State"
+    },
+    "State.db8c3ede-daf2-49c3-bb9f-89d56ac319fe": {
+        "id": "db8c3ede-daf2-49c3-bb9f-89d56ac319fe",
+        "created_at": "2024-01-16T04:05:29.974838",
+        "updated_at": "2024-01-16T04:05:29.974861",
+        "name": "California",
+        "__class__": "State"
+    },
+    "City.ce4b5bae-3fa6-4b07-a6a0-1e4f26bd13d8": {
+        "id": "ce4b5bae-3fa6-4b07-a6a0-1e4f26bd13d8",
+        "created_at": "2024-01-16T04:22:27.380533",
+        "updated_at": "2024-01-16T04:22:27.380561",
+        "state_id": "95a5abab-aa65-4861-9bc6-1da4a36069aa",
+        "name": "San Francisco",
+        "__class__": "City"
+    },
+    "City.d471c07b-51eb-4332-8416-41fb125fc46d": {
+        "id": "d471c07b-51eb-4332-8416-41fb125fc46d",
+        "created_at": "2024-01-16T04:23:08.080674",
+        "updated_at": "2024-01-16T04:23:08.080695",
+        "state_id": "95a5abab-aa65-4861-9bc6-1da4a36069aa",
+        "name": "San Jose",
+        "__class__": "City"
+    },
+    "Place.0ca7adca-008f-4749-a887-f8e3a1cadb4c": {
+        "id": "0ca7adca-008f-4749-a887-f8e3a1cadb4c",
+        "created_at": "2024-01-16T04:35:17.674354",
+        "updated_at": "2024-01-16T04:35:17.674396",
+        "city_id": "4b457e66-c7c8-4f63-910f-fd91c3b7140b",
+        "user_id": "4f3f4b42-a4c3-4c20-a492-efff10d00c0b",
+        "name": "Lovely place",
+        "number_rooms": "3",
+        "number_bathrooms": "1",
+        "max_guest": "6",
+        "price_by_night": "120",
+        "latitude": "37.773972",
+        "longitude": "-122.431297",
+        "__class__": "Place"
+    },
+    "User.70cb6a78-aba3-4f1a-836d-7d3ded9bc475": {
+        "id": "70cb6a78-aba3-4f1a-836d-7d3ded9bc475",
+        "created_at": "2024-01-16T04:42:38.581688",
+        "updated_at": "2024-01-16T04:42:38.581722",
+        "email": "bob@hbtn.io",
+        "password": "bobpwd",
+        "first_name": "Bob",
+        "last_name": "Dylan",
+        "__class__": "User"
+    },
+    "Review.1f96b8d4-7661-40a9-808d-66f099c43cbc": {
+        "id": "1f96b8d4-7661-40a9-808d-66f099c43cbc",
+        "created_at": "2024-01-16T04:42:57.974314",
+        "updated_at": "2024-01-16T04:42:57.974342",
+        "place_id": "ed72aa02-3286-4891-acbc-9d9fc80a1103",
+        "user_id": "d93638d9-8233-4124-8f4e-17786592908b",
+        "text": "Amazing place, huge kitchen",
+        "__class__": "Review"
+    }
+}
