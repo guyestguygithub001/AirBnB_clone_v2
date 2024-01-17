@@ -7,7 +7,7 @@ import urllib.parse
 
 from models.base_model import BaseModel, Base
 from models.state import State
-from models.city import City
+from models.city import Citiy
 from models.user import User
 from models.place import Place, place_amenity
 from models.amenity import Amenity
@@ -22,12 +22,12 @@ class DBStorage:
     def __init__(self):
         """Initializes the SQL database storage"""
         user = os.getenv('HBNB_MYSQL_USER')
-        pword = os.getenv('HBNB_MYSQL_PWD')
+        passwd = os.getenv('HBNB_MYSQL_PWD')
         host = os.getenv('HBNB_MYSQL_HOST')
-        db_name = os.getenv('HBNB_MYSQL_DB')
+        db = os.getenv('HBNB_MYSQL_DB')
         env = os.getenv('HBNB_ENV')
         DATABASE_URL = "mysql+mysqldb://{}:{}@{}:3306/{}".format(
-            user, pword, host, db_name
+            user, passwd, host, db
         )
         self.__engine = create_engine(
             DATABASE_URL,
