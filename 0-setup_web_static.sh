@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# script that sets up web servers for the deployment of web_static
+# A script used to set up web servers for the deployment of web_static,,
 sudo apt-get update
 sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
@@ -25,3 +25,4 @@ sudo chown -R ubuntu:ubuntu /data/
 sudo sed -i '/listen 80 default_server/a location /hbnb_static { alias /data/web_static/current/;}' /etc/nginx/sites-available/default
 
 sudo service nginx restart
+
