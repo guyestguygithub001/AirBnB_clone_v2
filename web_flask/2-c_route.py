@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" Starts Flash Web Application C is FUN,"""
+""" Starts Flask Web Application for C is FUN,"""
+
 from flask import Flask
 app = Flask(__name__)
 
@@ -14,11 +15,11 @@ def hbnb():
     """ Prints Message when /hbnb is called, """
     return 'HBNB'
 
-
-@app.route('/c/<text>', strict_slashes=False)
-def c_is_fun(text):
-    """ Prints Message when /c is called, """
-    return "C " + text.replace('_', ' ')
+@app.route("/c/<text>", strict_slashes=False)
+def c(text):
+    """Displays 'C' followed by its value of <text>"""
+    text = text.replace("_", " ")
+    return "C {}".format(text)
 
 if __name__ == "__main__":
     """ Given Function,"""
